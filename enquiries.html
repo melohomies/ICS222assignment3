@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pindah Private Limited - Contact Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="css/MainStyleSheet.css" rel="stylesheet" />
+</head>
+
+<body> 
+
+	<div class="container">
+	
+	
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/1.PNG">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">ekhayachickens</h1>
+								<h6 class="tm-site-description">Poultry production Company  </h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+								
+								<li class="tm-nav-li"><a href="enquiries.html" class="tm-nav-link active ">Enquiries</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Enquiries Page</h2>
+						</header>
+
+                        <div id ="error"></div>
+    
+                        <div >
+                        <form  id ="form" action="enquiries.html"method="GET">
+                            
+                            
+                            <div class > 
+                                
+                            <Label for="Name">Name:&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</Label>
+                            <input id="name" name ="Name " type="text" placeholder="Please enter your name" >
+                             <br><br>
+                            </div>
+                
+                            <div >
+                                
+                            <Label for="Number">Number:&nbsp; &nbsp; &nbsp;&nbsp; </Label>
+                            <input id="number" name ="Number" type="number" placeholder="Please enter your 10 digit"required >
+                            <br><br>
+                            </div>
+                            
+                            <div >
+                             
+                            <Label for="Email">Email:&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Label>
+                            <input id="email" name ="email " type="alphanumerical"placeholder="Please enter your email" required >
+                            </div>
+                            <p>
+                                Enquiries:&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <textarea name ="" id="area" cols="20" rows="10" ></textarea>
+                            </p>
+                            <button type="submit">SUBMIT</button>
+                
+                
+                        </form>
+                
+			
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2018 ekhayachickens Private Limited 
+            
+            | Design: <a rel="nofollow" href="https://ekhayachickens Private.com">ekhayachickens</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}	
+		});
+	</script>
+</body>
+</html>

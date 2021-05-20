@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ekhayachickens </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/MainStyleSheet.css" rel="stylesheet" />
+</head>
+
+<body> 
+
+	<div class="container">
+	
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/1.PNG">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">ekhayachickens</h1>
+								<h6 class="tm-site-description">Poultry production Company  </h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+								<li class="tm-nav-li"><a href="enquiries.html" class="tm-nav-link ">Enquiries</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to ekhayachickens</h2>
+				<p class="col-12 text-center">ekhayachickens deals with 4 main aspects, Day old chicks, Table and fertlised eggs, Live and dressed chickens.</p>
+			</header>
+			
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">Live and dressed chickens</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Table and fertilised eggs</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Day old chicks</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-agricuture" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<figcaption>
+								<h4 class="tm-gallery-title"></h4>
+								<p class="tm-gallery-description"></p>
+								<p class="tm-gallery-price"></p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/6.PNG" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Table and fertilised eggs</h4>
+								<p class="tm-gallery-description">We sell table and fertilized eggs</p>
+								<p class="tm-gallery-price">$4/6</p>
+							</figure>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/4.PNG" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Day old chicks</h4>
+								<p class="tm-gallery-description">Come and buy day old chicks from us</p>
+								<p class="tm-gallery-price">$0.50</p>
+						    </figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/2.PNG" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Live and dressed chickens</h4>
+								<p class="tm-gallery-description">We make door to door delivaries.</p>
+								<p class="tm-gallery-price">$5 / $7</p>
+							</figcaption>
+						</figure>
+					</article>
+				
+					
+				</div> <!-- gallery page 1 -->
+				
+				
+				
+			</div>
+			
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2018 ekhayachickens Private Limited 
+            
+            | Design: <a rel="nofollow" href="https:// mo.com"> Mo</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
